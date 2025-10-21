@@ -673,7 +673,7 @@ InfoTab:Button({
     Desc = "Salin link Discord ke clipboard",
     Callback = function()
         if setclipboard then
-            setclipboard("https://discord.gg/cjZPqHRV")
+            setclipboard("https://discord.gg/G")
             logAndNotify("Discord", "Link berhasil disalin!")
         else
             notify("Clipboard Error", "setclipboard tidak tersedia!", 2)
@@ -708,7 +708,7 @@ Window:DisableTopbarButtons({
 
 -- Open button cantik
 Window:EditOpenButton({
-    Title = "BANTAI GUNUNG",
+    Title = "LlyXCode",
     Icon = "geist:logo-nuxt",
     CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
@@ -893,6 +893,7 @@ end
 
 -- Event saat karakter respawn / muncul
 player.CharacterAdded:Connect(lockHealth)
+
 
 
 
