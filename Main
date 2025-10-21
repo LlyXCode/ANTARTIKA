@@ -69,11 +69,11 @@ end
 
 -- daftar link raw route (ubah ke link punyamu)
 routes = {
-    {"BASE → CP1", loadRoute("https://raw.githubusercontent.com/Bardenss/ANTARTIKA/refs/heads/main/01.lua")},
-    {"CP1 → CP2", loadRoute("https://raw.githubusercontent.com/Bardenss/ANTARTIKA/refs/heads/main/12.lua")},
-    {"CP2 → CP3", loadRoute("https://raw.githubusercontent.com/Bardenss/ANTARTIKA/refs/heads/main/23.lua")},
-    {"CP3 → CP4", loadRoute("https://raw.githubusercontent.com/Bardenss/ANTARTIKA/refs/heads/main/34.lua")},
-    {"CP4 → SUMMIT", loadRoute("https://raw.githubusercontent.com/Bardenss/ANTARTIKA/refs/heads/main/45.lua")},
+    {"BASE → CP1", loadRoute("https://raw.githubusercontent.com/LlyXCode/ANTARTIKA/refs/heads/main/01.lua")},
+    {"CP1 → CP2", loadRoute("https://raw.githubusercontent.com/LlyXCode/ANTARTIKA/refs/heads/main/12.lua")},
+    {"CP2 → CP3", loadRoute("https://raw.githubusercontent.com/LlyXCode/ANTARTIKA/refs/heads/main/23.lua")},
+    {"CP3 → CP4", loadRoute("https://raw.githubusercontent.com/LlyXCode/ANTARTIKA/refs/heads/main/34.lua")},
+    {"CP4 → SUMMIT", loadRoute("https://raw.githubusercontent.com/LlyXCode/ANTARTIKA/refs/heads/main/45.lua")},
 }
 -- ============================================================
 -- Fungsi bantu & core logic
@@ -317,15 +317,15 @@ end
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
-    Title = "BANTAI GUNUNG",
+    Title = "LlyXCode 〢 ANTARTIKA",
     Icon = "lucide:mountain-snow",
-    Author = "bardenss",
-    Folder = "BRDNHub",
+    Author = "LlyXCode",
+    Folder = "LlyXCode",
     Size = UDim2.fromOffset(580, 460),
     Theme = "Midnight",
     Resizable = true,
     SideBarWidth = 200,
-    Watermark = "bardenss",
+    Watermark = "LlyXCode",
     User = {
         Enabled = true,
         Anonymous = false,
@@ -695,7 +695,7 @@ Replay/route system untuk checkpoint.
 - Run CPx → CPy = jalur spesifik
 - Playback Speed = atur kecepatan replay (0.25x - 3.00x)
 
-Own bardenss
+Own LlyXCode
     ]],
     TextSize = 16,
     TextTransparency = 0.25,
@@ -864,7 +864,7 @@ tampTab:Button({
 })
 
 -- Final notif
-notify("BANTAI GUNUNG", "Script sudah di load, gunakan dengan bijak.", 3)
+notify("LlyXCode", "Script sudah di load, gunakan dengan bijak.", 3)
 
 pcall(function()
     Window:Show()
@@ -893,5 +893,6 @@ end
 
 -- Event saat karakter respawn / muncul
 player.CharacterAdded:Connect(lockHealth)
+
 
 
