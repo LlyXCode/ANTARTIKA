@@ -673,7 +673,7 @@ InfoTab:Button({
     Desc = "Salin link Discord ke clipboard",
     Callback = function()
         if setclipboard then
-            setclipboard("https://discord.gg/G")
+            setclipboard("https://discord.gg/BSEDnsJ5")
             logAndNotify("Discord", "Link berhasil disalin!")
         else
             notify("Clipboard Error", "setclipboard tidak tersedia!", 2)
@@ -893,6 +893,7 @@ end
 
 -- Event saat karakter respawn / muncul
 player.CharacterAdded:Connect(lockHealth)
+
 
 
 
